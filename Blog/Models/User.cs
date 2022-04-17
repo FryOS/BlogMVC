@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Blog.Models;
+using Microsoft.AspNetCore.Identity;
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -19,6 +20,7 @@ namespace MyBlog.Models
         public string MiddleName { get; set; }
 
         public DateTime BirthDate { get; set; }
+       
 
     }
 }
