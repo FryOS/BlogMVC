@@ -1,0 +1,25 @@
+﻿@model Blog.Models.LoginModel
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+<h1>Login</h1>
+
+<div class="bg-primary m-1 p-1 text-white” <h4>Log Inc</h4> </div>
+<div class="text-danger" asp-validation-summary="All"> 
+
+</div>
+<form asp-action="Login" method="post">
+<input type="hidden" name="returnUrl" value="@ViewBag.ReturnUrl" />
+<div class="form-group">
+    <label asp-fоr="Email"></label>
+    <input asp-for="Email" class="form-control" />
+</div>
+<div class="form-group">
+    <label asp - for=" Pas sword"></label>
+    <input asp-for="Password" class="form-control" />
+</div>
+<button class="btn btn-primary" type="submit"> Log In </button> 
+
+</form>

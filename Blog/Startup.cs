@@ -39,7 +39,9 @@ namespace Blog
                     opts.Password.RequireUppercase = false;
                     opts.Password.RequireDigit = false;
 
-                }).AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders(); 
+                }).AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
+
+            //services.ConfigureApplicationCookie(opts => opts.LoginPath = "/Users/Login");
 
             services.AddControllersWithViews();
         }
