@@ -22,9 +22,9 @@ namespace Blog.Controllers
         [Authorize]
         public IActionResult Index()
         {
-            return View();
+            return View(new Dictionary<string, object> { [ "placeholder"] = "placeholder" });
 
-            //new Dictionary<string, object> { { "placeholder", "placeholder" } }
+            
         }
 
         public IActionResult Privacy()
